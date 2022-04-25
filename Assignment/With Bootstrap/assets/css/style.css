@@ -1,0 +1,145 @@
+/* Google Fonts APIs */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Styling for navbar */
+.navbar {
+  background-color: #333;
+}
+
+.navbar-brand {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.navMenu {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.mainTitle {
+  font-size: 17px;
+}
+
+.subTitle {
+  font-size: 15px;
+}
+
+.counter {
+  background-color: #f7f7f7;
+  font-size: 13px;
+  padding: 0.1rem;
+}
+
+.jobCard {
+  width: 90%;
+}
+
+.jobTitleHolder {
+  background-color: #f7f7f7;
+}
+
+.jobDate,
+.jobLocation {
+  font-size: 13px;
+  color: #808080;
+}
+
+.btnThumb {
+  padding: 0.3rem;
+  width: 35%;
+  border: 1px solid #808080;
+}
+
+.thumbsUp {
+  background-color: #808080;
+  color: white;
+}
+
+.companyDetHolder,
+.roleDetHolder {
+  width: 90%;
+}
+
+.jobDetailsHolder {
+  width: 100%;
+}
+
+.detList {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.detList label,
+.detList p {
+  width: 47%;
+}
+
+.detList label {
+  color: #808080;
+}
+
+.subSecTitle {
+  font-size: 17px;
+  font-weight: bold;
+  color: #808080;
+  text-transform: uppercase;
+}
+
+.jobDesc {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Media Queries starts here */
+
+@media (min-width: 576px) {
+  .jobCard {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .jobCard {
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+  .jobTitleHolder {
+    width: 25% !important;
+  }
+
+  .jobDetailsHolder {
+    width: 75% !important;
+  }
+
+  .companyDetHolder,
+  .roleDetHolder {
+    width: 35% !important;
+  }
+
+  .percentageContainer {
+    width: 25% !important;
+  }
+
+  .subSecTitle {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .detList label,
+  .detList p {
+    width: 49%;
+    font-size: 12px;
+  }
+
+  .detList p {
+    margin: 0.2rem 0;
+  }
+}
