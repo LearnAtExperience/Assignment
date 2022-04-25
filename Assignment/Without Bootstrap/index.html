@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <!-- Percircle CSS -->
+  <link rel="stylesheet" href="./assets/css/percircle.css">
+  <title>CorEdge</title>
+</head>
+
+<body>
+
+  <!-- Navbar starts -->
+  <nav class="navBar">
+    <a href="#" class="navbarBrand">CorEdge</a>
+
+    <button class="navbarToggler">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+    </button>
+
+    <ul class="navMenu">
+      <li class="navItem">
+        <a href="#" class="navLink">Home</a>
+      </li>
+      <li class="navItem">
+        <a href="#" class="navLink">Jobs</a>
+      </li>
+      <li class="navItem">
+        <a href="#" class="navLink"><span><i class="fas fa-user-circle"></i></span><span>My Profile</span></a>
+      </li>
+      <li class="navItem">
+        <img src="./assets/images/profile.png" alt="Profile" class="profImg">
+        <a href="#" class="navLink">Santhosh Sivan A</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Navbar ends -->
+
+  <!-- Title section starts -->
+  <section class="titleHolder">
+    <p class="mainTitle">Jobs</p>
+    <div class="subTitleHolder">
+      <p class="subTitle">New Matches(12)</p>
+      <p class="subTitle">My Jobs(11)</p>
+      <p class="subTitle">Passed(3)</p>
+    </div>
+    <div class="counter">
+      <p class="count">Showing 1 of 3</p>
+    </div>
+  </section>
+  <!-- Title section ends -->
+
+  <!-- Jobs section starts -->
+  <section class="jobs">
+    <p class="secTitle">Passed(3)</p>
+    <div class="jobCardsHolder">
+
+      <!-- Card 1 -->
+      <div class="jobCard">
+        <div class="jobTitleHolder">
+          <p>Matched 24/04/2022</p>
+          <h3 class="jobTitle">Senior Developer</h3>
+          <p class="jobLocation">Chennai, Tamilnadu</p>
+          <div class="btnContainer">
+            <button class="thumbsUp btnThumb" onclick="increaseValue(this)"><i class="far fa-thumbs-up"></i>
+              <span class="tupCount">0</span></button>
+            <button class="thumbsDown btnThumb" onclick="increaseValue(this)">
+              <i class="far fa-thumbs-down"></i><span class="tdnCount">0</span></button>
+          </div>
+        </div>
+        <div class="jobDetailsHolder">
+          <div class="jobDetailsContainer">
+
+            <!-- Company Details -->
+            <div class="companyDetHolder">
+              <p class="subSecTitle">About the Company</p>
+              <div class="detLists">
+
+                <div class="detList">
+                  <label>Founded</label>
+                  <p>2002</p>
+                </div>
+                <div class="detList">
+                  <label>Employees</label>
+                  <p>10,000 - 15,000</p>
+                </div>
+                <div class="detList">
+                  <label>Revenue</label>
+                  <p>Confidential</p>
+                </div>
+                <div class="detList">
+                  <label>Series</label>
+                  <p>Series B</p>
+                </div>
+                <div class="detList">
+                  <label>Raised</label>
+                  <p>$27M</p>
+                </div>
+                <div class="detList">
+                  <label>Industry</label>
+                  <p>Technology</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Job Role Details -->
+            <div class="roleDetHolder">
+
+              <p class="subSecTitle">About the Role</p>
+              <div class="detLists">
+
+                <div class="detList">
+                  <label>Type</label>
+                  <p>Full-Time</p>
+                </div>
+                <div class="detList">
+                  <label>Total Compansation</label>
+                  <p>$1,50,000 - $1,80,000</p>
+                </div>
+                <div class="detList">
+                  <label>Equity/Options</label>
+                  <p>Yes</p>
+                </div>
+                <div class="detList">
+                  <label>Travel</label>
+                  <p>Requires 10% travel</p>
+                </div>
+                <div class="detList">
+                  <label>Work from Home</label>
+                  <p>1 day in a week</p>
+                </div>
+
+              </div>
+            </div>
+            <!-- Percentage -->
+            <div class="percentageContainer">
+              <div class="small percentCircle" data-percent="86" data-text="86" data-progressBarColor="#333"></div>
+            </div>
+          </div>
+          <div class="jobDescContainer">
+            <p class="subSecTitle">Job Description</p>
+            <p class="jobDesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores officiis culpa alias voluptate ab
+              ex! <a href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="jobCard">
+        <div class="jobTitleHolder">
+          <p>Matched 25/04/2022</p>
+          <h3 class="jobTitle">Junior Developer</h3>
+          <p class="jobLocation">Bangalore, Karnataka</p>
+          <div class="btnContainer">
+            <button class="thumbsUp btnThumb" onclick="increaseValue(this)"><i class="far fa-thumbs-up"></i>
+              <span class="tupCount">0</span></button>
+            <button class="thumbsDown btnThumb" onclick="increaseValue(this)">
+              <i class="far fa-thumbs-down"></i><span class="tdnCount">0</span></button>
+          </div>
+        </div>
+        <div class="jobDetailsHolder">
+          <div class="jobDetailsContainer">
+
+            <!-- Company Details -->
+            <div class="companyDetHolder">
+              <p class="subSecTitle">About the Company</p>
+              <div class="detLists">
+
+                <div class="detList">
+                  <label>Founded</label>
+                  <p>2002</p>
+                </div>
+                <div class="detList">
+                  <label>Employees</label>
+                  <p>10,000 - 15,000</p>
+                </div>
+                <div class="detList">
+                  <label>Revenue</label>
+                  <p>Confidential</p>
+                </div>
+                <div class="detList">
+                  <label>Series</label>
+                  <p>Series B</p>
+                </div>
+                <div class="detList">
+                  <label>Raised</label>
+                  <p>$27M</p>
+                </div>
+                <div class="detList">
+                  <label>Industry</label>
+                  <p>Technology</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Job Role Details -->
+            <div class="roleDetHolder">
+
+              <p class="subSecTitle">About the Role</p>
+              <div class="detLists">
+
+                <div class="detList">
+                  <label>Type</label>
+                  <p>Full-Time</p>
+                </div>
+                <div class="detList">
+                  <label>Total Compansation</label>
+                  <p>$1,50,000 - $1,80,000</p>
+                </div>
+                <div class="detList">
+                  <label>Equity/Options</label>
+                  <p>Yes</p>
+                </div>
+                <div class="detList">
+                  <label>Travel</label>
+                  <p>Requires 10% travel</p>
+                </div>
+                <div class="detList">
+                  <label>Work from Home</label>
+                  <p>1 day in a week</p>
+                </div>
+
+              </div>
+            </div>
+            <!-- Percentage -->
+            <div class="percentageContainer">
+              <div class="small percentCircle" data-percent="87" data-text="87" data-progressBarColor="#333"></div>
+            </div>
+          </div>
+          <div class="jobDescContainer">
+            <p class="subSecTitle">Job Description</p>
+            <p class="jobDesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores officiis culpa alias voluptate ab
+              ex! <a href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="jobCard">
+        <div class="jobTitleHolder">
+          <p>Matched 26/04/2022</p>
+          <h3 class="jobTitle">Project Trainee</h3>
+          <p class="jobLocation">Pune, Maharastra</p>
+          <div class="btnContainer">
+            <button class="thumbsUp btnThumb" onclick="increaseValue(this)"><i class="far fa-thumbs-up"></i>
+              <span class="tupCount">0</span></button>
+            <button class="thumbsDown btnThumb" onclick="increaseValue(this)">
+              <i class="far fa-thumbs-down"></i><span class="tdnCount">0</span></button>
+          </div>
+        </div>
+        <div class="jobDetailsHolder">
+          <div class="jobDetailsContainer">
+
+            <!-- Company Details -->
+            <div class="companyDetHolder">
+              <p class="subSecTitle">About the Company</p>
+              <div class="detLists">
+
+                <div class="detList">
+                  <label>Founded</label>
+                  <p>2002</p>
+                </div>
+                <div class="detList">
+                  <label>Employees</label>
+                  <p>10,000 - 15,000</p>
+                </div>
+                <div class="detList">
+                  <label>Revenue</label>
+                  <p>Confidential</p>
+                </div>
+                <div class="detList">
+                  <label>Series</label>
+                  <p>Series B</p>
+                </div>
+                <div class="detList">
+                  <label>Raised</label>
+                  <p>$27M</p>
+                </div>
+                <div class="detList">
+                  <label>Industry</label>
+                  <p>Technology</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Job Role Details -->
+            <div class="roleDetHolder">
+
+              <p class="subSecTitle">About the Role</p>
+              <div class="detLists">
+
+                <div class="detList">
+                  <label>Type</label>
+                  <p>Full-Time</p>
+                </div>
+                <div class="detList">
+                  <label>Total Compansation</label>
+                  <p>$1,50,000 - $1,80,000</p>
+                </div>
+                <div class="detList">
+                  <label>Equity/Options</label>
+                  <p>Yes</p>
+                </div>
+                <div class="detList">
+                  <label>Travel</label>
+                  <p>Requires 10% travel</p>
+                </div>
+                <div class="detList">
+                  <label>Work from Home</label>
+                  <p>1 day in a week</p>
+                </div>
+
+              </div>
+            </div>
+            <!-- Percentage -->
+            <div class="percentageContainer">
+              <div class="small percentCircle" data-percent="85" data-text="85" data-progressBarColor="#333"></div>
+            </div>
+
+          </div>
+
+          <div class="jobDescContainer">
+            <p class="subSecTitle">Job Description</p>
+            <p class="jobDesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores officiis culpa alias voluptate ab
+              ex! <a href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    </div>
+
+
+
+  </section>
+  <!-- Jobs section ends -->
+
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js"></script>
+  <!-- jQuery JS -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <!-- Percircle JS -->
+  <script src="./assets/js/percircle.js"></script>
+
+  <!-- Percircle JS Initialisation -->
+  <script>
+    $('.percentCircle').percircle();
+  </script>
+</body>
+
+</html>
